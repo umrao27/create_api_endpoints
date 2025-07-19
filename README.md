@@ -34,8 +34,9 @@ TOKEN_HEADER_KEY=your_token_header_key
 MONGO_URL="your_mongodb_connection_string"
 ```
 
-**API Endpoints**
-User Routes
+**API Endpoints**<br/>
+
+**User Routes**
 
 - POST /user/signup
 - Register a new user.
@@ -45,7 +46,7 @@ User Routes
   Login an existing user.
   **Body**: { "email": "string", "password": "string" }
 
-**Note Routes (Protected)**
+**Note Routes (Protected)** <br/>
 All note routes require an Authorization: Bearer <token> header.
 
 - GET /note/
@@ -62,7 +63,7 @@ All note routes require an Authorization: Bearer <token> header.
 - DELETE /note/:id
   Delete a note by ID.
 
-Environment Variables
+**Environment Variables**
 
 - PORT - Port number to run the server
 - JWT_SECRET_KEY - Secret key for JWT signing
